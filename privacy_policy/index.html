@@ -1,0 +1,1189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Privacy Policy for Dropify – Secure Peer-to-Peer Nearby Android File Sharing application developed by Subhojit Haldar."/>
+  <title>Privacy Policy – Dropify</title>
+  
+  <!-- Typography from Design Tokens Specification -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600;700;800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Colors — Primary */
+      --color-primary: #4d43fe;
+      --color-brand: #4d43fe;
+      --color-action: #4d43fe;
+
+      /* Ramp — primary (base is 600) */
+      --color-primary-50: #d7ecff;
+      --color-primary-100: #c9dfff;
+      --color-primary-200: #b5cbff;
+      --color-primary-300: #9aadff;
+      --color-primary-400: #7985ff;
+      --color-primary-500: #5f60ff;
+      --color-primary-600: #4d43fe;
+      --color-primary-700: #3d33d3;
+      --color-primary-800: #3124b4;
+      --color-primary-900: #271898;
+      --color-primary-950: #14055f;
+
+      /* Ramp — neutral */
+      --color-neutral-50: #f5f5f7;
+      --color-neutral-100: #e5e7eb;
+      --color-neutral-200: #d1d5db;
+      --color-neutral-300: #9ca3af;
+      --color-neutral-400: #adacbe;
+      --color-neutral-500: #828282;
+      --color-neutral-600: #6c6c6c;
+      --color-neutral-700: #374151;
+      --color-neutral-800: #1f2937;
+      --color-neutral-900: #131722;
+      --color-neutral-950: #0d0f17;
+
+      /* Surfaces */
+      --bg-page: #0b0d14;
+      --bg-surface: #121624;
+      --bg-card: #181d2e;
+      --bg-card-hover: #1f263d;
+      --border-subtle: #252c42;
+      --border-accent: rgba(77, 67, 254, 0.35);
+
+      /* Colors — Text */
+      --text-main: #f3f4f8;
+      --text-muted: #9aa2b5;
+      --text-subtle: #6b758d;
+      --text-heading: #ffffff;
+      --text-accent: #7985ff;
+
+      /* Typography — Families */
+      --font-sans: 'Anek Latin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      /* Spacing */
+      --spacing-4: 4px;
+      --spacing-8: 8px;
+      --spacing-12: 12px;
+      --spacing-16: 16px;
+      --spacing-20: 20px;
+      --spacing-24: 24px;
+      --spacing-32: 32px;
+      --spacing-40: 40px;
+      --spacing-48: 48px;
+
+      /* Border Radius */
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+
+      /* Shadows */
+      --shadow-glow: 0 0 35px rgba(77, 67, 254, 0.28);
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+      --shadow-btn: 0 4px 18px rgba(77, 67, 254, 0.35);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(77, 67, 254, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 10% 30%, rgba(95, 96, 255, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 70%, rgba(77, 67, 254, 0.06) 0%, transparent 45%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      line-height: 1.75;
+      padding: 0 16px 80px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header Banner */
+    header {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 56px 0 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+      position: relative;
+    }
+
+    .logo-container {
+      position: relative;
+      width: 84px;
+      height: 84px;
+      margin-bottom: 4px;
+      filter: drop-shadow(0 10px 24px rgba(77, 67, 254, 0.45));
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .badge-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(77, 67, 254, 0.14);
+      color: var(--color-primary-300);
+      font-family: var(--font-sans);
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(77, 67, 254, 0.35);
+      backdrop-filter: blur(8px);
+    }
+
+    .badge.verified {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    header h1 {
+      font-family: var(--font-sans);
+      font-size: clamp(32px, 5vw, 44px);
+      font-weight: 800;
+      color: var(--text-heading);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+
+    header h1 span {
+      background: linear-gradient(135deg, #ffffff 40%, var(--color-primary-300) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      color: var(--text-muted);
+      font-size: 13.5px;
+      margin-top: 2px;
+    }
+
+    .meta-bar span.pill {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 3px 10px;
+      border-radius: var(--radius-sm);
+      color: var(--color-primary-200);
+      font-family: monospace;
+      font-size: 12.5px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    /* Quick Highlight Grid */
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .highlight-card {
+      background: linear-gradient(145deg, rgba(24, 29, 46, 0.95), rgba(18, 22, 36, 0.85));
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      text-align: left;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .highlight-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .highlight-icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .highlight-title {
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 4px;
+    }
+
+    .highlight-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Table of Contents & Quick Search */
+    .toc-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 24px 28px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-card);
+      backdrop-filter: blur(12px);
+    }
+
+    .toc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .toc-title {
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--color-primary-400);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      padding: 7px 14px 7px 34px;
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 13px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .search-input:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(77, 67, 254, 0.25);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-subtle);
+      font-size: 13px;
+      pointer-events: none;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 24px;
+      list-style: none;
+      counter-reset: toc-counter;
+    }
+
+    @media (max-width: 640px) {
+      .toc-grid {
+        grid-template-columns: 1fr;
+      }
+      .search-input-wrapper {
+        max-width: 100%;
+      }
+    }
+
+    .toc-grid li {
+      counter-increment: toc-counter;
+      display: flex;
+      align-items: baseline;
+      font-size: 13.5px;
+    }
+
+    .toc-grid li::before {
+      content: counter(toc-counter) ".";
+      color: var(--color-primary-400);
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 12px;
+      width: 22px;
+      flex-shrink: 0;
+    }
+
+    .toc-grid a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-block;
+      padding: 2px 0;
+    }
+
+    .toc-grid a:hover {
+      color: var(--color-primary-300);
+      transform: translateX(3px);
+    }
+
+    /* Sections */
+    section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 30px;
+      margin-bottom: 20px;
+      scroll-margin-top: 24px;
+      box-shadow: var(--shadow-card);
+      transition: border-color 0.2s ease;
+    }
+
+    section:hover {
+      border-color: rgba(77, 67, 254, 0.3);
+    }
+
+    section h2 {
+      font-family: var(--font-sans);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .sec-badge {
+      background: var(--color-primary);
+      color: #ffffff;
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 800;
+      width: 28px;
+      height: 28px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 10px rgba(77, 67, 254, 0.4);
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Permissions List & Cards */
+    .perm-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .perm-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .perm-item:hover {
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+    }
+
+    .perm-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .perm-name {
+      font-family: monospace;
+      font-size: 13.5px;
+      color: var(--color-primary-300);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .perm-tag {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-subtle);
+    }
+
+    .perm-tag.strict {
+      background: rgba(77, 67, 254, 0.16);
+      color: var(--color-primary-300);
+      border: 1px solid rgba(77, 67, 254, 0.3);
+    }
+
+    .perm-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Purpose Grid */
+    .purpose-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .purpose-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .purpose-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-2px);
+    }
+
+    .purpose-icon {
+      font-size: 22px;
+    }
+
+    .purpose-title {
+      font-family: var(--font-sans);
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-heading);
+    }
+
+    .purpose-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Lists */
+    ul.bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 12px 0;
+    }
+
+    ul.bullet-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14.5px;
+      color: var(--text-main);
+    }
+
+    ul.bullet-list li::before {
+      content: '◆';
+      color: var(--color-primary);
+      font-size: 10px;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    /* Alerts */
+    .alert {
+      background: linear-gradient(135deg, rgba(77, 67, 254, 0.12), rgba(95, 96, 255, 0.05));
+      border: 1px solid rgba(77, 67, 254, 0.35);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      font-size: 13.5px;
+      color: var(--text-main);
+      margin: 16px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      line-height: 1.6;
+    }
+
+    .alert.success {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(5, 150, 105, 0.05));
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+
+    .alert-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .alert strong {
+      color: var(--color-primary-300);
+    }
+
+    .alert.success strong {
+      color: #34d399;
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .contact-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+    }
+
+    .contact-label {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--color-primary-400);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 4px;
+    }
+
+    .contact-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-heading);
+      word-break: break-word;
+    }
+
+    .contact-value a {
+      color: var(--color-primary-300);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-value a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+
+    /* Actions toolbar */
+    .action-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--color-primary);
+      color: #ffffff;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow-btn);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: var(--color-primary-500);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(77, 67, 254, 0.45);
+    }
+
+    .btn.secondary {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      box-shadow: none;
+    }
+
+    .btn.secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-accent);
+      color: #ffffff;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #1e2438;
+      border: 1px solid var(--color-primary);
+      color: #ffffff;
+      padding: 10px 22px;
+      border-radius: var(--radius-full);
+      font-size: 13.5px;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), var(--shadow-glow);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      max-width: 840px;
+      margin: 48px auto 0;
+      text-align: center;
+      color: var(--text-subtle);
+      font-size: 13px;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    footer .brand-signature {
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0;
+      }
+      header, section, .toc-card, .highlight-card, .perm-item, .purpose-card, .contact-card {
+        background: #ffffff !important;
+        border: 1px solid #cccccc !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+      }
+      .badge, .sec-badge {
+        background: #000000 !important;
+        color: #ffffff !important;
+      }
+      .btn, .search-input-wrapper {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Dropify App Logo SVG (48x48 rounded squircle with 'Df' text) -->
+  <div class="logo-container" aria-label="Dropify Logo">
+    <svg width="84" height="84" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="dfGradient" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#5f60ff"/>
+          <stop offset="100%" stop-color="#4d43fe"/>
+        </linearGradient>
+      </defs>
+      <!-- Squircle Background -->
+      <path d="M10,0 L38,0 A10,10 0 0 1 48,10 L48,38 A10,10 0 0 1 38,48 L10,48 A10,10 0 0 1 0,38 L0,10 A10,10 0 0 1 10,0 Z" fill="url(#dfGradient)" />
+      <!-- Letter 'D' -->
+      <path d="M10,13 H19 C23.5,13 26.5,16.5 26.5,24 C26.5,31.5 23.5,35 19,35 H10 Z M15,18 V30 H18.5 C20.8,30 22,28 22,24 C22,20 20.8,18 18.5,18 Z" fill="#FFFFFF" fill-rule="evenodd" />
+      <!-- Letter 'f' -->
+      <path d="M29,35 V23 H26.5 V19.5 H29 V17 C29,14 31,13 34.5,13 C35.8,13 36.8,13.2 37,13.3 V16.8 C36.6,16.7 35.8,16.6 35,16.6 C33.6,16.6 33,17.3 33,18.7 V19.5 H36.8 V23 H33 V35 Z" fill="#FFFFFF" />
+    </svg>
+  </div>
+
+  <div class="badge-row">
+    <span class="badge">Official Policy</span>
+    <span class="badge verified">✓ Zero-Cloud P2P</span>
+    <span class="badge">Version 1.0</span>
+  </div>
+
+  <h1>Privacy Policy – <span>Dropify</span></h1>
+
+  <div class="meta-bar">
+    <div>Package: <span class="pill">com.HaldarAi.Dropify</span></div>
+    <div>•</div>
+    <div>Developer: <strong>Subhojit Haldar</strong></div>
+    <div>•</div>
+    <div>Effective Date: <strong>November 05, 2026</strong></div>
+  </div>
+
+  <div class="action-bar">
+    <button class="btn secondary" onclick="window.print()">
+      🖨️ Print / Save PDF
+    </button>
+    <button class="btn" onclick="copyContactEmail()">
+      📋 Copy Developer Email
+    </button>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Core Highlights Grid -->
+  <div class="highlight-grid">
+    <div class="highlight-card">
+      <div class="highlight-icon">🔒</div>
+      <div class="highlight-title">100% P2P Local</div>
+      <div class="highlight-desc">Files transfer straight between nearby devices over Wi-Fi Direct or Bluetooth. Never routed through any cloud.</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">🚫</div>
+      <div class="highlight-title">Zero Analytics / Ads</div>
+      <div class="highlight-desc">Dropify has no advertising SDKs, no behavioral trackers, and no third-party telemetry data collection.</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">👤</div>
+      <div class="highlight-title">No Account Needed</div>
+      <div class="highlight-desc">No login, email, or telephone number required. Your temporary profile name and avatar stay on your own phone.</div>
+    </div>
+    <div class="highlight-card">
+      <div class="highlight-icon">🛡️</div>
+      <div class="highlight-title">Explicit Confirmation</div>
+      <div class="highlight-desc">Receivers must explicitly tap "Accept" for each session before any payload is transferred.</div>
+    </div>
+  </div>
+
+  <!-- Interactive Table of Contents & Quick Search -->
+  <div class="toc-card">
+    <div class="toc-header">
+      <div class="toc-title">
+        <span>📑</span> Table of Contents
+      </div>
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="policySearch" class="search-input" placeholder="Search sections or permissions…" onkeyup="filterSections()" />
+      </div>
+    </div>
+    <ol class="toc-grid">
+      <li><a href="#s1">Interpretation &amp; Definitions</a></li>
+      <li><a href="#s2">Zero-Cloud P2P Transfer Architecture</a></li>
+      <li><a href="#s3">Device Permissions &amp; Why We Need Them</a></li>
+      <li><a href="#s4">Data Collection &amp; Processing</a></li>
+      <li><a href="#s5">Local Storage &amp; Data Retention</a></li>
+      <li><a href="#s6">Third-Party Libraries &amp; SDKs</a></li>
+      <li><a href="#s7">User Rights &amp; Data Controls</a></li>
+      <li><a href="#s8">Data Security &amp; Encryption</a></li>
+      <li><a href="#s9">Children's Privacy Protection</a></li>
+      <li><a href="#s10">International Privacy Compliance</a></li>
+      <li><a href="#s11">Changes to This Privacy Policy</a></li>
+      <li><a href="#s12">Statutory Grievance Officer (India)</a></li>
+      <li><a href="#s13">Contact Us &amp; Developer Information</a></li>
+    </ol>
+  </div>
+
+  <!-- Section 1 -->
+  <section id="s1" class="policy-section">
+    <h2><span class="sec-badge">1</span> Interpretation &amp; Definitions</h2>
+    <p><strong>"App"</strong> refers to <strong>Dropify</strong> (application ID: <code>com.HaldarAi.Dropify</code>), an Android application designed for high-speed, local peer-to-peer file sharing between nearby physical devices.</p>
+    <p><strong>"We / Us / Our / Developer"</strong> refers to <strong>Subhojit Haldar</strong>, independent software engineer and publisher of Dropify, residing in West Bengal, India.</p>
+    <p><strong>"You / User"</strong> refers to any individual who downloads, installs, or interacts with the Dropify application.</p>
+    <p><strong>"Peer-to-Peer (P2P)"</strong> means direct wireless communication between two nearby Android devices without passing through external intermediate servers, clouds, or web gateways.</p>
+    <p><strong>"Payload"</strong> refers to the local files (photos, videos, music, documents, archives, or applications) selected by the user to be sent directly to another paired nearby device.</p>
+  </section>
+
+  <!-- Section 2 -->
+  <section id="s2" class="policy-section">
+    <h2><span class="sec-badge">2</span> Zero-Cloud P2P Transfer Architecture</h2>
+    <p>The core privacy philosophy of <strong>Dropify</strong> is simple: <strong>your personal files belong exclusively on your hardware</strong>. Dropify does not own, operate, or connect to any remote server or cloud database to relay or store your files.</p>
+    
+    <div class="purpose-grid">
+      <div class="purpose-card">
+        <div class="purpose-icon">⚡</div>
+        <div class="purpose-title">Direct Wi-Fi Direct Links</div>
+        <div class="purpose-text">Transfers occur over an encrypted high-speed local Wi-Fi hotspot or Wi-Fi Direct link established directly between the two phones.</div>
+      </div>
+      <div class="purpose-card">
+        <div class="purpose-icon">📡</div>
+        <div class="purpose-title">Nearby Bluetooth Handshake</div>
+        <div class="purpose-text">Bluetooth Low Energy is used solely to discover nearby available devices and exchange initial connection tokens.</div>
+      </div>
+      <div class="purpose-card">
+        <div class="purpose-icon">🛑</div>
+        <div class="purpose-title">Zero Remote Servers</div>
+        <div class="purpose-text">Files never travel over the public internet, no cloud copies are created, and no third-party proxies can intercept transfers.</div>
+      </div>
+      <div class="purpose-card">
+        <div class="purpose-icon">📱</div>
+        <div class="purpose-title">QR Code Offline Pairing</div>
+        <div class="purpose-text">Users can pair instantly by scanning an on-screen QR code containing offline connection parameters.</div>
+      </div>
+    </div>
+
+    <div class="alert success">
+      <div class="alert-icon">✅</div>
+      <div><strong>Offline Functionality:</strong> Dropify functions completely offline. You can share files in remote locations, airplanes, or areas with zero cellular connectivity or Wi-Fi internet access.</div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section id="s3" class="policy-section">
+    <h2><span class="sec-badge">3</span> Device Permissions &amp; Why We Need Them</h2>
+    <p>To establish peer-to-peer wireless connections and transfer files, Android requires specific system permissions. Dropify requests only permissions that are strictly necessary to perform core sharing operations, in compliance with the Android Least-Privilege model.</p>
+    
+    <ul class="perm-list">
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">NEARBY_WIFI_DEVICES (Android 13+)</span>
+          <span class="perm-tag strict">Nearby Discovery</span>
+        </div>
+        <div class="perm-desc">Allows Dropify to discover and connect to nearby Wi-Fi Direct devices without requesting or accessing your device's geographical location (declared with <code>neverForLocation</code>).</div>
+      </li>
+
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">BLUETOOTH_ADVERTISE, CONNECT &amp; SCAN (Android 12+)</span>
+          <span class="perm-tag strict">P2P Handshake</span>
+        </div>
+        <div class="perm-desc">Enables local device discovery and Bluetooth handshakes to negotiate peer connections. Declared with <code>usesPermissionFlags="neverForLocation"</code> so Dropify never uses Bluetooth to determine geographical coordinates.</div>
+      </li>
+
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">ACCESS_FINE_LOCATION &amp; ACCESS_COARSE_LOCATION</span>
+          <span class="perm-tag">Legacy OS Only</span>
+        </div>
+        <div class="perm-desc">Required strictly by the Android operating system on Android 11 and older devices to scan for Wi-Fi and Bluetooth signals. <strong>Dropify never collects, logs, tracks, or transmits your actual physical coordinates.</strong></div>
+      </li>
+
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">ACCESS_WIFI_STATE &amp; CHANGE_WIFI_STATE</span>
+          <span class="perm-tag">Network Link</span>
+        </div>
+        <div class="perm-desc">Allows the app to check Wi-Fi status and establish local peer-to-peer Wi-Fi Direct connections to achieve gigabit-level file transfer speeds.</div>
+      </li>
+
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">FOREGROUND_SERVICE &amp; FOREGROUND_SERVICE_DATA_SYNC</span>
+          <span class="perm-tag">Background Transfer</span>
+        </div>
+        <div class="perm-desc">Ensures large file transfers continue smoothly even if you minimize the app or lock the screen. A persistent notification shows real-time transfer progress, speed, and status.</div>
+      </li>
+
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">POST_NOTIFICATIONS (Android 13+)</span>
+          <span class="perm-tag">User Awareness</span>
+        </div>
+        <div class="perm-desc">Used to notify you of incoming transfer requests from nearby senders and show completion notices when transfers finish.</div>
+      </li>
+
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">CAMERA</span>
+          <span class="perm-tag">QR Code Scanner</span>
+        </div>
+        <div class="perm-desc">Used exclusively when you tap "Scan QR" to read the receiver's pairing code using Google ML Kit. Camera frames are processed entirely on-device; no photos or video streams are ever stored or uploaded.</div>
+      </li>
+
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">VIBRATE</span>
+          <span class="perm-tag">Haptic Feedback</span>
+        </div>
+        <div class="perm-desc">Provides tactile confirmation when a transfer completes or when an incoming connection request is received.</div>
+      </li>
+
+      <li class="perm-item">
+        <div class="perm-top">
+          <span class="perm-name">Zero Broad Storage Permissions</span>
+          <span class="perm-tag strict">Modern Storage</span>
+        </div>
+        <div class="perm-desc">Dropify does <strong>NOT</strong> request unrestricted storage permissions like <code>READ_EXTERNAL_STORAGE</code> on modern Android. Instead, it uses the official zero-permission Android Photo Picker and system document picker so you only share files you explicitly select.</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section 4 -->
+  <section id="s4" class="policy-section">
+    <h2><span class="sec-badge">4</span> Data Collection &amp; Processing</h2>
+    <p>Dropify does not collect, harvest, monetize, or sell personal data. The minimal data processed by the app is limited to:</p>
+    
+    <ul class="bullet-list">
+      <li><strong>Display Name and Avatar:</strong> When you first launch Dropify, you choose a friendly nickname and avatar icon. This information is broadcast locally over Bluetooth/Wi-Fi only to nearby peers so they can identify your device on the discovery radar. It is never transmitted outside your local environment.</li>
+      <li><strong>Selected File Metadata:</strong> Filenames, file sizes, and MIME types of files you select for transfer are shared strictly with the paired receiver so they can view the transfer preview and accept the files.</li>
+      <li><strong>Device Visibility Preference:</strong> You can toggle your visibility off at any time in Settings. When turned off, nearby devices cannot discover or send files to your phone.</li>
+    </ul>
+
+    <div class="alert">
+      <div class="alert-icon">ℹ️</div>
+      <div><strong>No Central Identifiers:</strong> Dropify does not collect your phone number, Google account, IMEI, MAC address, advertising ID (GAID), or biometric data.</div>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section id="s5" class="policy-section">
+    <h2><span class="sec-badge">5</span> Local Storage &amp; Data Retention</h2>
+    <p>All application state is kept locally on your physical device using Android's private internal storage and Room SQLite database:</p>
+    
+    <ul class="bullet-list">
+      <li><strong>Transfer History Log:</strong> Records of sent and received sessions (filenames, timestamps, sizes, peer names) are stored in your device's local database.</li>
+      <li><strong>One-Tap History Clear:</strong> You can clear your transfer history log at any time in Settings &gt; Clear History. Clearing the log does not delete the actual files from your device.</li>
+      <li><strong>Received Files Location:</strong> Received files are saved in your device's public <code>Downloads/Dropify</code> folder (or your designated folder). You retain full ownership and control over these files and can delete, move, or modify them using any file manager.</li>
+      <li><strong>Application Uninstall:</strong> If you uninstall Dropify, all internal configuration, database logs, and user preferences are automatically erased from your device by the Android OS.</li>
+    </ul>
+  </section>
+
+  <!-- Section 6 -->
+  <section id="s6" class="policy-section">
+    <h2><span class="sec-badge">6</span> Third-Party Libraries &amp; SDKs</h2>
+    <p>Dropify utilizes a minimal, privacy-centric set of open-source and Google system platform libraries:</p>
+    
+    <ul class="bullet-list">
+      <li><strong>Google Play Services Nearby Connections:</strong> The official Google Android API used to establish encrypted peer-to-peer Wi-Fi and Bluetooth communication channels. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--color-primary-300)">Google Privacy Policy</a>.</li>
+      <li><strong>Google ML Kit Barcode Scanning / ZXing:</strong> Used to render and scan offline QR codes for device pairing. Processing is performed 100% on-device.</li>
+      <li><strong>Jetpack Compose &amp; AndroidX:</strong> Modern Android UI framework and system lifecycle components developed by Google and the Android Open Source Project (AOSP).</li>
+      <li><strong>NO Advertising SDKs:</strong> Dropify does not integrate Google AdMob, Unity Ads, AppLovin, Facebook Audience Network, or any other ad networks.</li>
+      <li><strong>NO Analytics SDKs:</strong> Dropify contains no Firebase Analytics, Google Analytics, Adjust, AppsFlyer, or Flurry tracking code.</li>
+    </ul>
+  </section>
+
+  <!-- Section 7 -->
+  <section id="s7" class="policy-section">
+    <h2><span class="sec-badge">7</span> User Rights &amp; Data Controls</h2>
+    <p>You have complete control over your privacy and interactions in Dropify:</p>
+    
+    <ul class="bullet-list">
+      <li><strong>Permission Revocation:</strong> You can grant or revoke any Android permission (Camera, Nearby Devices, Notifications, Location) at any time through Android System Settings &gt; Apps &gt; Dropify &gt; Permissions.</li>
+      <li><strong>Discovery Control:</strong> You can turn off "Device Visibility" in Settings to prevent nearby senders from discovering your device.</li>
+      <li><strong>Consent per Session:</strong> When another device attempts to send files, Dropify displays a confirmation dialog with the sender's name and file summary. You have the right to Accept or Decline the transfer.</li>
+      <li><strong>History Deletion:</strong> You can clear your transfer logs at will without needing developer approval.</li>
+      <li><strong>Right to Inquire:</strong> Under GDPR, CCPA, and the Indian Digital Personal Data Protection Act, you have the right to inquire about data handling by contacting our Grievance Officer.</li>
+    </ul>
+  </section>
+
+  <!-- Section 8 -->
+  <section id="s8" class="policy-section">
+    <h2><span class="sec-badge">8</span> Data Security &amp; Encryption</h2>
+    <p>We prioritize the security of your direct peer-to-peer transfers:</p>
+    
+    <ul class="bullet-list">
+      <li><strong>End-to-End Handshake Encryption:</strong> Google Nearby Connections uses cryptographic key exchange protocols (Diffie-Hellman / AES-256) during the handshake to protect data in transit between the two paired devices.</li>
+      <li><strong>Mutual Verification:</strong> Senders and receivers verify matching 4-digit pairing authentication codes or QR checksums before transferring sensitive payload bytes.</li>
+      <li><strong>Local Sandbox:</strong> Application preferences and transfer logs are stored in Android's sandboxed private storage, inaccessible to other unauthorized third-party apps on your phone.</li>
+    </ul>
+  </section>
+
+  <!-- Section 9 -->
+  <section id="s9" class="policy-section">
+    <h2><span class="sec-badge">9</span> Children's Privacy Protection</h2>
+    <p>Dropify is a general-utility productivity tool for local file transfer. We do not knowingly solicit, collect, or store personal information from children under the age of 13 (or 16 in applicable jurisdictions), nor is the app designed to attract children.</p>
+    <p>Because Dropify operates without account registration and without remote servers, no children's profiles or identities are gathered. Parents or guardians with questions may contact us at <a href="mailto:business.tizongaming@gmail.com" style="color:var(--color-primary-300)">business.tizongaming@gmail.com</a>.</p>
+  </section>
+
+  <!-- Section 10 -->
+  <section id="s10" class="policy-section">
+    <h2><span class="sec-badge">10</span> International Privacy Compliance</h2>
+    <p>Dropify complies with major global data protection frameworks:</p>
+    
+    <ul class="bullet-list">
+      <li><strong>Google Play Developer Policy:</strong> Full adherence to Google Play's User Data Policy, Permissions and APIs that Access Sensitive Information policy, and Prominent Disclosure requirements.</li>
+      <li><strong>India Digital Personal Data Protection Act (DPDP) &amp; IT Rules:</strong> Adheres to data minimization principles and maintains an active Grievance Redressal mechanism.</li>
+      <li><strong>GDPR (European Economic Area):</strong> Processing is lawful under Article 6 (contractual necessity to perform requested transfers). No international data transfers occur because data remains on the user's hardware.</li>
+      <li><strong>California Consumer Privacy Act (CCPA / CPRA):</strong> We do not sell or share personal consumer information as defined under California law.</li>
+    </ul>
+  </section>
+
+  <!-- Section 11 -->
+  <section id="s11" class="policy-section">
+    <h2><span class="sec-badge">11</span> Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time to reflect modifications in application functionality, Android OS system requirements, or legal standards. When changes occur, we will update the "Effective Date" at the top of this document.</p>
+    <p>We encourage users to review this page periodically. Continued use of Dropify following the posting of changes constitutes acceptance of the revised terms.</p>
+  </section>
+
+  <!-- Section 12 -->
+  <section id="s12" class="policy-section">
+    <h2><span class="sec-badge">12</span> Statutory Grievance Officer (India)</h2>
+    <p>In accordance with the Information Technology Act, 2000 and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, the designated Grievance Officer for Dropify is:</p>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-label">Officer Name</div>
+        <div class="contact-value">Subhojit Haldar</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Designation</div>
+        <div class="contact-value">Grievance Officer &amp; Lead Developer</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Official Email</div>
+        <div class="contact-value"><a href="mailto:business.tizongaming@gmail.com">business.tizongaming@gmail.com</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Telephone</div>
+        <div class="contact-value"><a href="tel:+918637856826">+91 8637856826</a></div>
+      </div>
+      <div class="contact-card" style="grid-column: 1 / -1;">
+        <div class="contact-label">Jurisdiction &amp; Address</div>
+        <div class="contact-value">West Bengal, India</div>
+      </div>
+    </div>
+
+    <div class="alert">
+      <div class="alert-icon">⚖️</div>
+      <div><strong>Statutory Redressal Timeline:</strong> Grievances will be acknowledged within <strong>24 hours</strong> of receipt and addressed/resolved within <strong>15 working days</strong>.</div>
+    </div>
+  </section>
+
+  <!-- Section 13 -->
+  <section id="s13" class="policy-section">
+    <h2><span class="sec-badge">13</span> Contact Us &amp; Developer Information</h2>
+    <p>If you have any questions, feedback, or requests regarding this Privacy Policy or Dropify's privacy practices, please contact:</p>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-label">Developer</div>
+        <div class="contact-value">Subhojit Haldar</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Application</div>
+        <div class="contact-value">Dropify (Peer-to-Peer Nearby Sharing)</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Primary Email</div>
+        <div class="contact-value"><a href="mailto:business.tizongaming@gmail.com">business.tizongaming@gmail.com</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Secondary Email</div>
+        <div class="contact-value"><a href="mailto:officialtizongaming@gmail.com">officialtizongaming@gmail.com</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Phone</div>
+        <div class="contact-value"><a href="tel:+918637856826">+91 8637856826</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Package Name</div>
+        <div class="contact-value"><code>com.HaldarAi.Dropify</code></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="brand-signature">Dropify &nbsp;•&nbsp; Peer-to-Peer Nearby Sharing</div>
+  <div>Package: <code>com.HaldarAi.Dropify</code> &nbsp;•&nbsp; Developed by Subhojit Haldar</div>
+  <div>© 2026 Subhojit Haldar. All rights reserved. &nbsp;•&nbsp; West Bengal, India</div>
+</footer>
+
+<div id="toast" class="toast">Developer email copied to clipboard!</div>
+
+<script>
+  // Filter sections by search query
+  function filterSections() {
+    const input = document.getElementById('policySearch');
+    const filter = input.value.toLowerCase().trim();
+    const sections = document.querySelectorAll('.policy-section');
+
+    sections.forEach(sec => {
+      const text = sec.innerText.toLowerCase();
+      if (!filter || text.includes(filter)) {
+        sec.style.display = 'block';
+      } else {
+        sec.style.display = 'none';
+      }
+    });
+  }
+
+  // Copy email to clipboard with toast notification
+  function copyContactEmail() {
+    const email = 'business.tizongaming@gmail.com';
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(email).then(() => {
+        showToast('Copied: ' + email);
+      });
+    } else {
+      const temp = document.createElement('textarea');
+      temp.value = email;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      showToast('Copied: ' + email);
+    }
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    toast.innerText = msg;
+    toast.classList.add('show');
+    setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2800);
+  }
+</script>
+
+</body>
+</html>

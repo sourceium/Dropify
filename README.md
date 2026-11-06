@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Dropify
+#  Dropify = 💧 + ❄️ + 🔥
 
 **Share Any File in Seconds. No Internet. No Cloud. No Limits.**
 
@@ -106,7 +106,7 @@ Dropify adheres to the Android Least-Privilege security model:
 | `CAMERA` | All | Scans recipient pairing QR code via on-device ML Kit. Frames are never recorded or uploaded. |
 | `Zero Broad Storage Permissions` | API 33+ | Uses Android Photo Picker and Storage Access Framework. Dropify **never** requests unrestricted file system access. |
 
-Full privacy policy available at: [https://dropifyin.vercel.app/privacy_policy.html](https://dropifyin.vercel.app/privacy_policy/index.html).
+Full privacy policy available at: [https://dropifyin.vercel.app/privacy_policy/index.html](https://dropifyin.vercel.app/privacy_policy/index.html).
 
 ---
 
@@ -150,7 +150,7 @@ Developed and maintained with ❤️ by:
 
 - **Author**: Subhojit Haldar
 - **GitHub**: [@sourceium](https://github.com/sourceium)
-- **Email**: [business.tizongaming@gmail.com](mailto:business.tizongaming@gmail.com) / [officialtizongaming@gmail.com](mailto:officialtizongaming@gmail.com)
+- **Email**: [business.tizongaming@gmail.com](mailto:business.tizongaming@gmail.com)
 - **Phone**: +91 8637856826
 - **Location**: West Bengal, India
 

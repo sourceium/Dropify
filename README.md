@@ -16,7 +16,7 @@
 [**🌐 Official Website**](https://dropifyin.vercel.app) &nbsp;•&nbsp; 
 [**📥 Download APK (v1.0)**](https://drive.google.com/file/d/10lRTHGoRYlXTBd6fzdGQgTZ3vCPfBOSq/view?usp=drivesdk) &nbsp;•&nbsp; 
 [**📦 Download AAB Bundle**](https://drive.google.com/file/d/1ZU1VCtShwjNWYQk03rsJ9hUk7IJvqRS0/view?usp=drivesdk) &nbsp;•&nbsp; 
-[**📜 Privacy Policy**](https://dropifyin.vercel.app/privacy_policy.html)
+[**📜 Privacy Policy**](https://dropifyin.vercel.app/privacy_policy/index.html)
 
 </div>
 
@@ -106,7 +106,7 @@ Dropify adheres to the Android Least-Privilege security model:
 | `CAMERA` | All | Scans recipient pairing QR code via on-device ML Kit. Frames are never recorded or uploaded. |
 | `Zero Broad Storage Permissions` | API 33+ | Uses Android Photo Picker and Storage Access Framework. Dropify **never** requests unrestricted file system access. |
 
-Full privacy policy available at: [https://dropifyin.vercel.app/privacy_policy.html](https://dropifyin.vercel.app/privacy_policy.html).
+Full privacy policy available at: [https://dropifyin.vercel.app/privacy_policy.html](https://dropifyin.vercel.app/privacy_policy/index.html).
 
 ---
 
@@ -139,7 +139,7 @@ gradle :app:testDebugUnitTest
 
 Dropify's web portal and SEO landing page is hosted on Vercel:
 - **Landing Page**: [https://dropifyin.vercel.app/](https://dropifyin.vercel.app/)
-- **Privacy Policy**: [https://dropifyin.vercel.app/privacy_policy.html](https://dropifyin.vercel.app/privacy_policy.html)
+- **Privacy Policy**: [https://dropifyin.vercel.app/privacy_policy/index.html](https://dropifyin.vercel.app/privacy_policy/index.html)
 - **Sitemap**: [https://dropifyin.vercel.app/sitemap.xml](https://dropifyin.vercel.app/sitemap.xml)
 
 ---

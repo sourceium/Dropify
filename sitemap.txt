@@ -1,2 +1,3 @@
 https://dropifyin.vercel.app/
 https://dropifyin.vercel.app/favicon.png
+https://dropifyin.vercel.app/favicon.ico
